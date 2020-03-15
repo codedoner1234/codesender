@@ -1,0 +1,94 @@
+ 
+/*   descendent   */
+#mainheader p{
+	color:red;
+}
+
+
+#subcontent p
+{
+color:blue;
+}
+/*================*/
+ 
+/*child selector*/
+#mainheader>p
+{
+	color:darkgoldenrod;
+	text-transform: uppercase
+}
+
+/*================*/
+
+/*adjacent selector */
+.article h2+p
+{
+	color:greenyellow;
+}
+
+/*================*/
+/*attribute selector*/
+div[id]
+{
+	background-color: grey
+}
+/*================*/
+ first and last child selector
+ .article p:first-child
+{
+color:aqua;
+}
+.article  p:last-child
+{
+	color:blue;
+}
+/*================*/
+
+ /*first and last type of selector     /*
+.article p:first-of-type
+{
+	color:red;
+}
+.article p:last-of-type
+{
+	color:green;
+}
+/*================*/
+/* nth-child selector  */
+
+
+li:nth-child(1),li:nth-child(4)
+{
+	color:red;
+}
+
+li:nth-child(even)
+{
+	background-color: grey;
+}
+li:nth-child(odd)
+{
+	background-color: red;
+}
+
+/*================*/
+/*   nth of type selectors */
+article:nth-of-type(odd)
+{
+
+background-color: grey;
+}*/
+/*================*/
+/* combining selector*/
+div.featurecontent
+{
+background-color: red;
+}
+article.featurecontent
+{
+	background-color: green;
+}
+article
+{
+	text-decoration: underline
+}
